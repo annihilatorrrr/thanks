@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Success!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #00ffc8;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #cccccc;
+    }
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #00ffc8;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    a:hover {
+      background-color: #00d2a8;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://telegram.me/BuySubscriptionRoBot";
+    }, 5000);
+  </script>
+</head>
+<body>
+  <div class="card fade-in">
+    <h1>Thank You, for Your Payment!</h1>
+    <p>Your payment means really a lot to me :)</p>
+    <p>You will be redirected back to Telegram in 5 seconds...</p>
+    <a href="https://telegram.me/BuySubscriptionRoBot">Click here if not redirected</a>
+  </div>
+</body>
+</html>
